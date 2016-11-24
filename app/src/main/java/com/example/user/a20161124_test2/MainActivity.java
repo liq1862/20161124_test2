@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
                     conn.connect();
                     inputStream = conn.getInputStream();
 
-                    double fullSize = conn.getContentLength(); // 總長度
-                    byte[] buffer = new byte[64]; // buffer ( 每次讀取長度 )
-                    int readSize = 0; // 當下讀取長度
+                    double fullSize = conn.getContentLength(); // 總檔案大小
+                    byte[] buffer = new byte[64]; // buffer ( 每次讀取大小 )
+                    int readSize = 0; // 當下讀取大小
                     int readAllSize = 0;
 
 
